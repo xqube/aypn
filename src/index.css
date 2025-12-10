@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Tailwind CSS v4: Enable class-based dark mode */
+/* This tells Tailwind to use the .dark class on any ancestor (not just prefers-color-scheme) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Optional: Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
