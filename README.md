@@ -1,18 +1,24 @@
-# React + Vite
+# U R Ayyappan Pillai | Full-Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](./public/preview.png)
 
-Currently, two official plugins are available:
+A modern, high-performance personal portfolio website built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. Designed to showcase my skills, projects, and professional experience with a premium, interactive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- **Framework:** React 19
+- **Language:** TypeScript
+- **Build Tool:** Vite 7
+- **Styling:** Tailwind CSS 4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Deployment:** Vercel (Ready)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## ✨ Features
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Design:** Fully responsive layout optimized for all devices (Mobile, Tablet, Desktop).
+- **Dark/Light Mode:** Seamless theme switching with a unique circular reveal animation.
+- **Interactive Animations:** Smooth scroll animations, fade-ins, and stagger effects using Framer Motion.
+- **Dynamic Content:** Data-driven sections for Experience, Projects, and Skills for easy updates.
+- **Performance Optimized:** Fast load times with Vite's optimized build and code splitting.
+- **Form Handling:** Contact form with loading states and validation.
