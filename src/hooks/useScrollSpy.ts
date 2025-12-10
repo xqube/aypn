@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 
-export const useScrollSpy = (sectionIds = ['home', 'about', 'skills', 'projects', 'contact']) => {
-    const [activeSection, setActiveSection] = useState('home');
+const DEFAULT_SECTIONS = ['home', 'about', 'skills', 'projects', 'contact'] as const;
+
+export const useScrollSpy = (sectionIds: readonly string[] = DEFAULT_SECTIONS): string => {
+    const [activeSection, setActiveSection] = useState<string>('home');
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = (): void => {
             const scrollPosition = window.scrollY + 200;
 
             for (const section of sectionIds) {

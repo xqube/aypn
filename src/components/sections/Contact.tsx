@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
 import { Card, Button } from '../ui';
@@ -7,7 +8,7 @@ export const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
         setTimeout(() => {
@@ -109,7 +110,7 @@ export const Contact = () => {
 
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-slate-600 dark:text-slate-400">Message</label>
-                                    <textarea required rows="4" className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-md px-4 py-3 text-slate-900 dark:text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="We have an opening for a Full Stack Developer..." />
+                                    <textarea required rows={4} className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-md px-4 py-3 text-slate-900 dark:text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="We have an opening for a Full Stack Developer..." />
                                 </div>
 
                                 <Button type="submit" disabled={isSubmitting} className="w-full h-12 text-base">

@@ -6,10 +6,10 @@ import { fadeInUp, staggerContainer } from '../../lib/animations';
 import { SKILLS } from '../../data';
 
 export const Skills = () => {
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-    const getIcon = (category) => {
+    const getIcon = (category: string) => {
         switch (category) {
             case 'Frontend': return <Layout className="text-indigo-600 dark:text-indigo-400" size={32} />;
             case 'Backend': return <Server className="text-indigo-600 dark:text-indigo-400" size={32} />;

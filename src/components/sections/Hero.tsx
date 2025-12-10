@@ -3,8 +3,15 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '../ui';
 import { fadeInUp, staggerContainer } from '../../lib/animations';
 
+interface HeroSkill {
+    name: string;
+    icon: string;
+    x: number;
+    y: number;
+}
+
 // Featured skills to display in hero animation - key technologies recruiters should see
-const HERO_SKILLS = [
+const HERO_SKILLS: HeroSkill[] = [
     { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', x: 160, y: 0 },
     { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', x: 100, y: -140 },
     { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', x: -100, y: -140 },
@@ -47,7 +54,7 @@ export const Hero = () => {
                     </motion.p>
 
                     <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 pt-4">
-                        <Button onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })} className="h-12 px-8 text-base shadow-indigo-500/20 hover:shadow-indigo-500/30">
+                        <Button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="h-12 px-8 text-base shadow-indigo-500/20 hover:shadow-indigo-500/30">
                             View Work
                         </Button>
                         <Button variant="secondary" className="h-12 px-8 text-base group border-slate-200 hover:border-indigo-200 dark:border-slate-700" onClick={() => window.open('https://linkedin.com/in/aypnpillai', '_blank')}>

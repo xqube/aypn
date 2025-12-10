@@ -6,8 +6,8 @@ import { fadeInUp, staggerContainer } from '../../lib/animations';
 import { PROJECTS } from '../../data';
 
 export const Projects = () => {
-    const [selectedId, setSelectedId] = useState(null);
-    const ref = useRef(null);
+    const [selectedId, setSelectedId] = useState<number | null>(null);
+    const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const selectedProject = PROJECTS.find(p => p.id === selectedId);

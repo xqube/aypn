@@ -1,4 +1,11 @@
-export const EXPERIENCE = [
+export interface Experience {
+    year: string;
+    role: string;
+    company: string;
+    description: string;
+}
+
+export const EXPERIENCE: Experience[] = [
     {
         year: "2024 - 2025",
         role: "Backend Developer",
@@ -19,7 +26,7 @@ export const EXPERIENCE = [
     }
 ];
 
-export const CERTIFICATIONS = [
+export const CERTIFICATIONS: string[] = [
     "Architecting with Google Compute Engine (Coursera)",
     "AWS Academy Graduate - Cloud Foundations"
 ];

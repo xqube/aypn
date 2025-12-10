@@ -1,4 +1,15 @@
-export const PROJECTS = [
+export interface Project {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    tech: string[];
+    features: string[];
+    github: string;
+    live: string;
+}
+
+export const PROJECTS: Project[] = [
     {
         id: 1,
         title: "ORCUBE - Rental Platform",

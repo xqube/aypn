@@ -4,7 +4,13 @@ import { Menu, X, Moon, Sun } from 'lucide-react';
 import { Button } from '../ui';
 import { NAV_LINKS } from '../../data';
 
-export const Navbar = ({ activeSection, isDarkMode, toggleTheme }) => {
+interface NavbarProps {
+    activeSection: string;
+    isDarkMode: boolean;
+    toggleTheme: (e: React.MouseEvent) => void;
+}
+
+export const Navbar = ({ activeSection, isDarkMode, toggleTheme }: NavbarProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -14,7 +20,7 @@ export const Navbar = ({ activeSection, isDarkMode, toggleTheme }) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const scrollTo = (id) => {
+    const scrollTo = (id: string) => {
         setIsOpen(false);
         const element = document.querySelector(id);
         if (element) element.scrollIntoView({ behavior: 'smooth' });

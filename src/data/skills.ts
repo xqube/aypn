@@ -1,4 +1,12 @@
-export const SKILLS = {
+export interface Skill {
+    name: string;
+    level: number;
+    icon: string;
+}
+
+export type SkillCategories = Record<string, Skill[]>;
+
+export const SKILLS: SkillCategories = {
     Frontend: [
         { name: 'React.js', level: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
         { name: 'Redux Toolkit', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg' },

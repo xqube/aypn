@@ -5,7 +5,7 @@ import { fadeInUp, staggerContainer } from '../../lib/animations';
 import { CERTIFICATIONS } from '../../data';
 
 export const About = () => {
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
