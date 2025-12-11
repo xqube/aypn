@@ -7,10 +7,10 @@ export interface Experience {
 
 export const EXPERIENCE: Experience[] = [
     {
-        year: "2024 - 2025",
-        role: "Backend Developer",
-        company: "Reway",
-        description: "Architected robust backend infrastructure for browser extensions, managed AWS EC2 production environments, and engineered RESTful APIs for seamless cloud communication."
+        year: "2024 - Present",
+        role: "Freelance Full Stack Developer",
+        company: "Self-Employed",
+        description: "Delivering end-to-end web solutions for clients worldwide. Specializing in building scalable backend systems, RESTful APIs, and modern frontend applications using React, Node.js, and cloud technologies."
     },
     {
         year: "Dec 2023 - Jun 2024",

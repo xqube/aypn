@@ -9,7 +9,7 @@ export const About = () => {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
-        <section id="about" className="py-24 relative bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+        <section id="about" className="py-16 relative bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
             <div className="container mx-auto px-6">
                 <motion.div
                     ref={ref}
@@ -20,7 +20,7 @@ export const About = () => {
                 >
                     {/* Tech Terminal */}
                     <motion.div variants={fadeInUp} className="relative">
-                        <div className="w-full aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-2xl shadow-slate-300/50 dark:shadow-none font-mono text-sm relative">
+                        <div className="w-full aspect-[4/3] bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-2xl shadow-slate-300/50 dark:shadow-none font-mono text-sm relative">
                             {/* Terminal Header */}
                             <div className="bg-slate-800 px-4 py-2 flex items-center gap-2 border-b border-slate-700/50">
                                 <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -29,7 +29,7 @@ export const About = () => {
                                 <span className="ml-2 text-slate-500 text-xs">developer@portfolio:~/about</span>
                             </div>
                             {/* Terminal Body */}
-                            <div className="p-6 text-slate-300 space-y-4">
+                            <div className="p-4 text-slate-300 space-y-3">
                                 <div>
                                     <span className="text-green-400">➜</span> <span className="text-blue-400">~</span> <span className="text-yellow-400">whoami</span>
                                 </div>

@@ -21,9 +21,25 @@ export const Navbar = ({ activeSection, isDarkMode, toggleTheme }: NavbarProps) 
     }, []);
 
     const scrollTo = (id: string) => {
-        setIsOpen(false);
-        const element = document.querySelector(id);
-        if (element) element.scrollIntoView({ behavior: 'smooth' });
+        const performScroll = () => {
+            const element = document.querySelector(id);
+            if (element) {
+                const navbarHeight = 80;
+                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                    top: elementPosition - navbarHeight,
+                    behavior: 'smooth'
+                });
+            }
+        };
+
+        if (isOpen) {
+            setIsOpen(false);
+            // Wait for menu close animation to complete
+            setTimeout(performScroll, 300);
+        } else {
+            performScroll();
+        }
     };
 
     return (

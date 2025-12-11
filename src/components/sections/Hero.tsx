@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, FileDown } from 'lucide-react';
 import { Button } from '../ui';
 import { fadeInUp, staggerContainer } from '../../lib/animations';
 
@@ -57,9 +57,9 @@ export const Hero = () => {
                         <Button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="h-12 px-8 text-base shadow-indigo-500/20 hover:shadow-indigo-500/30">
                             View Work
                         </Button>
-                        <Button variant="secondary" className="h-12 px-8 text-base group border-slate-200 hover:border-indigo-200 dark:border-slate-700" onClick={() => window.open('https://linkedin.com/in/aypnpillai', '_blank')}>
-                            <Linkedin className="mr-2 h-4 w-4 group-hover:text-indigo-600 transition-colors" />
-                            LinkedIn
+                        <Button variant="secondary" className="h-12 px-8 text-base group border-slate-200 hover:border-indigo-200 dark:border-slate-700" onClick={() => window.open('/resume.pdf', '_blank')}>
+                            <FileDown className="mr-2 h-4 w-4 group-hover:text-indigo-600 transition-colors" />
+                            Resume
                         </Button>
                     </motion.div>
 
