@@ -99,10 +99,10 @@ export const Projects = () => {
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent" />
-                                <div className="absolute bottom-6 left-6">
-                                    <h3 className="text-3xl font-bold text-white">{selectedProject.title}</h3>
-                                    <div className="flex gap-2 mt-2">
-                                        {selectedProject.tech.map(t => <Badge key={t} className="bg-white/20 text-white border-white/20 backdrop-blur-sm">{t}</Badge>)}
+                                <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
+                                    <h3 className="text-2xl md:text-3xl font-bold text-white">{selectedProject.title}</h3>
+                                    <div className="flex flex-wrap gap-1.5 md:gap-2 mt-2 max-w-full">
+                                        {selectedProject.tech.map(t => <Badge key={t} className="bg-white/20 text-white border-white/20 backdrop-blur-sm text-[10px] md:text-xs">{t}</Badge>)}
                                     </div>
                                 </div>
                             </div>

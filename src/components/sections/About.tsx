@@ -20,7 +20,7 @@ export const About = () => {
                 >
                     {/* Tech Terminal */}
                     <motion.div variants={fadeInUp} className="relative">
-                        <div className="w-full aspect-[4/3] bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-2xl shadow-slate-300/50 dark:shadow-none font-mono text-sm relative">
+                        <div className="w-full min-h-[320px] md:min-h-[360px] bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-2xl shadow-slate-300/50 dark:shadow-none font-mono text-sm relative">
                             {/* Terminal Header */}
                             <div className="bg-slate-800 px-4 py-2 flex items-center gap-2 border-b border-slate-700/50">
                                 <div className="w-3 h-3 rounded-full bg-red-500" />
