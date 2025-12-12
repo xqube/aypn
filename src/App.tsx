@@ -1,8 +1,23 @@
+import { lazy, Suspense } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 // Components
 import { Navbar, Footer } from './components/layout';
-import { Hero, About, Skills, Projects, Experience, Contact } from './components/sections';
+import { Hero } from './components/sections'; // Hero stays eager for LCP
+
+// Lazy loaded sections - code split into separate chunks
+const About = lazy(() => import('./components/sections/About').then(m => ({ default: m.About })));
+const Skills = lazy(() => import('./components/sections/Skills').then(m => ({ default: m.Skills })));
+const Experience = lazy(() => import('./components/sections/Experience').then(m => ({ default: m.Experience })));
+const Projects = lazy(() => import('./components/sections/Projects').then(m => ({ default: m.Projects })));
+const Contact = lazy(() => import('./components/sections/Contact').then(m => ({ default: m.Contact })));
+
+// Minimal loading fallback to prevent layout shift
+const SectionFallback = () => (
+    <div className="py-24 flex justify-center items-center">
+        <div className="w-8 h-8 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin" />
+    </div>
+);
 
 // Hooks
 import { useTheme } from './hooks/useTheme';
@@ -51,11 +66,21 @@ const App = () => {
 
                 <main>
                     <Hero />
-                    <About />
-                    <Skills />
-                    <Experience />
-                    <Projects />
-                    <Contact />
+                    <Suspense fallback={<SectionFallback />}>
+                        <About />
+                    </Suspense>
+                    <Suspense fallback={<SectionFallback />}>
+                        <Skills />
+                    </Suspense>
+                    <Suspense fallback={<SectionFallback />}>
+                        <Experience />
+                    </Suspense>
+                    <Suspense fallback={<SectionFallback />}>
+                        <Projects />
+                    </Suspense>
+                    <Suspense fallback={<SectionFallback />}>
+                        <Contact />
+                    </Suspense>
                 </main>
 
                 <Footer />
