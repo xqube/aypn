@@ -22,7 +22,7 @@ const HERO_SKILLS: HeroSkill[] = [
 
 export const Hero = () => {
     return (
-        <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white dark:from-slate-950 dark:to-slate-950">
+        <section id="home" className="relative min-h-screen flex items-center pt-12 md:pt-20 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white dark:from-slate-950 dark:to-slate-950">
             {/* Background Elements */}
             <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-indigo-200/40 dark:bg-indigo-600/20 rounded-full blur-[120px] -z-10 mix-blend-multiply dark:mix-blend-normal" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-200/40 dark:bg-cyan-600/10 rounded-full blur-[120px] -z-10 mix-blend-multiply dark:mix-blend-normal" />

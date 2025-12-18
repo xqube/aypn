@@ -26,7 +26,7 @@ export const About = () => {
                                 <div className="w-3 h-3 rounded-full bg-red-500" />
                                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
                                 <div className="w-3 h-3 rounded-full bg-green-500" />
-                                <span className="ml-2 text-slate-500 text-xs">developer@portfolio:~/about</span>
+                                <span className="ml-2 text-slate-500 text-xs">aypn@debian:~/about</span>
                             </div>
                             {/* Terminal Body */}
                             <div className="p-4 text-slate-300 space-y-3">
