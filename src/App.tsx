@@ -1,8 +1,8 @@
-import { lazy, Suspense } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { lazy, Suspense, useState, useEffect } from 'react';
+import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
 
 // Components
-import { Navbar, Footer } from './components/layout';
+import { Navbar, Footer, LoadingScreen } from './components/layout';
 import { Hero } from './components/sections'; // Hero stays eager for LCP
 
 // Lazy loaded sections - code split into separate chunks
@@ -24,6 +24,7 @@ import { useTheme } from './hooks/useTheme';
 import { useScrollSpy } from './hooks/useScrollSpy';
 
 const App = () => {
+    const [isLoading, setIsLoading] = useState(true);
     const { isDarkMode, toggleTheme, themeOrigin } = useTheme();
     const activeSection = useScrollSpy();
 
@@ -34,8 +35,19 @@ const App = () => {
         restDelta: 0.001
     });
 
+    useEffect(() => {
+        // Show loading screen for smooth initial experience
+        const timer = setTimeout(() => setIsLoading(false), 1500);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className={isDarkMode ? 'dark' : ''}>
+            {/* Loading Screen */}
+            <AnimatePresence>
+                {isLoading && <LoadingScreen />}
+            </AnimatePresence>
+
             {/* Background Layers for Circular Reveal */}
             <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
                 {/* Base layer - Dark background (bottom) */}

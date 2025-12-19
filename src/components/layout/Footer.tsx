@@ -8,7 +8,8 @@ export const Footer = () => (
                 <a href="#contact" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact</a>
             </div>
             <p className="text-slate-500 text-sm">
-                &copy; {new Date().getFullYear()} Ayyappan Pillai. Built with <span className="text-indigo-600 dark:text-indigo-400">React</span> & <span className="text-indigo-600 dark:text-indigo-400">Tailwind</span>.
+                &copy; {new Date().getFullYear()} Ayyappan Pillai.
+                {/* Built with <span className="text-indigo-600 dark:text-indigo-400">React</span> & <span className="text-indigo-600 dark:text-indigo-400">Tailwind</span>. */}
             </p>
         </div>
     </footer>

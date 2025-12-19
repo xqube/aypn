@@ -24,7 +24,17 @@ export const Experience = () => {
                                 <span className="text-sm font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-500/10 px-3 py-1 rounded-full w-fit mt-2 sm:mt-0">{exp.year}</span>
                             </div>
                             <div className="text-lg text-slate-700 dark:text-slate-400 font-medium mb-2">{exp.company}</div>
-                            <p className="text-slate-600 dark:text-slate-500">{exp.description}</p>
+                            <p className="text-slate-600 dark:text-slate-500 mb-3">{exp.description}</p>
+                            {exp.highlights && exp.highlights.length > 0 && (
+                                <ul className="space-y-1.5">
+                                    {exp.highlights.map((highlight, i) => (
+                                        <li key={i} className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                            <span className="text-indigo-500 mt-1.5">•</span>
+                                            <span>{highlight}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </motion.div>
                     ))}
                 </div>

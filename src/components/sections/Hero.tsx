@@ -50,7 +50,7 @@ export const Hero = () => {
                     </motion.h1>
 
                     <motion.p variants={fadeInUp} className="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed font-medium">
-                        Full-Stack Developer specializing in Node.js, React, and Scalable Cloud Solutions. Architecting robust infrastructure and high-performance applications.
+                        Results-driven Full-Stack Developer with hands-on experience in the MERN stack. Deployed production applications serving <span className="text-indigo-600 dark:text-indigo-400 font-semibold">1M+ file operations</span> on AWS/GCP with Docker, Kubernetes, and CI/CD pipelines.
                     </motion.p>
 
                     <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 pt-4">

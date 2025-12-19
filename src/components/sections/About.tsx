@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Award } from 'lucide-react';
 import { fadeInUp, staggerContainer } from '../../lib/animations';
-import { CERTIFICATIONS } from '../../data';
 
 export const About = () => {
     const ref = useRef<HTMLDivElement>(null);
@@ -66,10 +65,10 @@ export const About = () => {
                             About <span className="text-indigo-600 dark:text-indigo-400">Me</span>
                         </motion.h2>
                         <motion.p variants={fadeInUp} className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
-                            I am a Full-Stack Developer with a B.Tech in Computer Science from Pathanapuram College of Engineering. I specialize in the MERN stack (MongoDB, Express, React, Node.js) and have a strong passion for building backend infrastructure and scalable systems.
+                            Results-driven Full-Stack Developer with hands-on experience building scalable web applications using the MERN stack. Proven track record of deploying production-ready applications serving 1M+ file operations on AWS and GCP, with understanding in containerization (Docker/Kubernetes) and CI/CD pipelines.
                         </motion.p>
                         <motion.p variants={fadeInUp} className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
-                            My expertise extends to cloud deployment on AWS and Google Cloud, containerization with Docker, and developing efficient RESTful APIs. I have experience working with diverse technologies including TypeScript, Python, and Redis, always striving to implement industry best practices.
+                            Passionate about creating efficient, user-centric solutions with optimized performance and clean code architecture. My expertise extends to high-performance Telegram bot development, database optimization, and cloud infrastructure management.
                         </motion.p>
 
                         <motion.div variants={fadeInUp} className="space-y-3 pt-2">
@@ -77,12 +76,18 @@ export const About = () => {
                                 <Award size={18} className="text-indigo-600 dark:text-indigo-400" /> Certifications
                             </h3>
                             <ul className="space-y-2">
-                                {CERTIFICATIONS.map((cert) => (
-                                    <li key={cert} className="flex items-center space-x-2 text-slate-600 dark:text-slate-300">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-                                        <span className="text-sm font-medium">{cert}</span>
-                                    </li>
-                                ))}
+                                <li className="flex items-center space-x-2 text-slate-600 dark:text-slate-300">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/YUBHHDKCMXZ9" target="_blank" rel="noreferrer" className="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                                        Architecting with Google Compute Engine (Coursera) ↗
+                                    </a>
+                                </li>
+                                <li className="flex items-center space-x-2 text-slate-600 dark:text-slate-300">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+                                    <a href="https://www.credly.com/badges/0d8c9053-a9fa-464c-aee9-2270ce909e26" target="_blank" rel="noreferrer" className="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                                        AWS Academy Graduate - Cloud Foundations ↗
+                                    </a>
+                                </li>
                             </ul>
                         </motion.div>
                     </div>
