@@ -80,8 +80,8 @@ export const Hero = () => {
                     {/* Central Hub - MERN Stack indicator */}
                     <div className="relative z-10">
                         <div className="w-44 h-44 bg-white/90 dark:bg-slate-900 rounded-full flex flex-col items-center justify-center border-4 border-white dark:border-slate-800 shadow-[0_0_80px_-15px_rgba(99,102,241,0.4)] dark:shadow-none relative z-10 backdrop-blur-sm">
-                            <span className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-cyan-600 dark:from-indigo-400 dark:to-cyan-400 bg-clip-text text-transparent">MERN</span>
-                            <span className="text-sm text-slate-500 dark:text-slate-400 mt-1">Full Stack</span>
+                            <span className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-cyan-600 dark:from-indigo-400 dark:to-cyan-400 bg-clip-text text-transparent">Full Stack</span>
+                            {/* <span className="text-sm text-slate-500 dark:text-slate-400 mt-1">Full Stack</span> */}
                         </div>
                         {/* Pulsing Effects */}
                         <div className="absolute inset-0 bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full animate-ping" />
