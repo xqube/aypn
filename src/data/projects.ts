@@ -22,26 +22,16 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 2,
-        title: "Telegram Bot Creator Platform",
-        description: "Centralized multi-bot management system with dynamic webhook routing, isolated MongoDB databases per bot, and high-performance task queues. Zero-downtime deployments via GitHub Actions CI/CD.",
-        image: "./images/telegram-bot.png",
-        tech: ["TypeScript", "Node.js", "Fastify", "grammY", "MongoDB", "Docker"],
-        features: ["Multi-bot Management", "Dynamic Webhooks", "Task Queues", "GitHub Actions CI/CD", "Zero-Downtime Deploys"],
-        github: "https://github.com/xqube/autofilter-bot-creator",
+        title: "TgStreamer - Media Streaming Bot",
+        description: "Telegram bot generating direct HTTP streaming URLs for media files. Stream videos directly to VLC, browsers, or any media player with full seeking support and optimized range request handling.",
+        image: "./images/tgstreamer.png",
+        tech: ["TypeScript", "Node.js", "mtcute", "Winston", "Zod"],
+        features: ["Direct Streaming", "Range Requests", "Multi-format Support", "User Authorization", "Rate Limiting"],
+        github: "https://github.com/xqube/tgstreamer",
         live: "#"
     },
     {
         id: 3,
-        title: "TG File Indexing Bot",
-        description: "High-performance Telegram bot for indexing and retrieving 1M+ files with sub-100ms search response times. Optimized MongoDB text indexing with efficient query pagination and caching.",
-        image: "./images/telegram-file-index.png",
-        tech: ["Node.js", "grammY", "MongoDB", "Docker", "Hetzner VPS"],
-        features: ["1M+ File Indexing", "Sub-100ms Search", "99.9% Uptime", "Query Pagination", "Caching Strategies"],
-        github: "https://github.com/xqube/TelegramIndexbot",
-        live: "#"
-    },
-    {
-        id: 4,
         title: "AnimusDigital - E-Commerce",
         description: "Full-featured e-commerce platform with user/admin dashboards, PayPal payments, Twilio OTP verification, and sales analytics. Deployed on AWS EC2 with Nginx, SSL certificates, and automated backups.",
         image: "./images/ecommerce.png",
@@ -51,3 +41,4 @@ export const PROJECTS: Project[] = [
         live: "#"
     }
 ];
+

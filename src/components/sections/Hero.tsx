@@ -50,14 +50,14 @@ export const Hero = () => {
                     </motion.h1>
 
                     <motion.p variants={fadeInUp} className="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed font-medium">
-                        Results-driven Full-Stack Developer with hands-on experience in the MERN stack. Deployed production applications serving <span className="text-indigo-600 dark:text-indigo-400 font-semibold">1M+ file operations</span> on AWS/GCP with Docker, Kubernetes, and CI/CD pipelines.
+                        Results-driven Full-Stack Developer with hands-on experience building scalable web applications using the MERN stack. Deployed production-ready projects on AWS and GCP using Docker, Kubernetes, and CI/CD pipelines. Passionate about creating efficient, user-centric solutions with optimized performance and clean code architecture.
                     </motion.p>
 
                     <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 pt-4">
                         <Button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="h-12 px-8 text-base shadow-indigo-500/20 hover:shadow-indigo-500/30">
                             View Work
                         </Button>
-                        <Button variant="secondary" className="h-12 px-8 text-base group border-slate-200 hover:border-indigo-200 dark:border-slate-700" onClick={() => window.open('/resume.pdf', '_blank')}>
+                        <Button variant="secondary" className="h-12 px-8 text-base group border-slate-200 hover:border-indigo-200 dark:border-slate-700" onClick={() => window.open('/AyyappanPillai.pdf', '_blank')}>
                             <FileDown className="mr-2 h-4 w-4 group-hover:text-indigo-600 transition-colors" />
                             Resume
                         </Button>

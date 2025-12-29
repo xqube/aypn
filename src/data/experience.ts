@@ -14,7 +14,7 @@ export const EXPERIENCE: Experience[] = [
         description: "Delivering end-to-end web solutions for clients worldwide, specializing in scalable backend systems and cloud infrastructure.",
         highlights: [
             "Built and deployed production applications handling 1M+ file operations on AWS/GCP",
-            "Developed high-performance Telegram bots with sub-100ms response times",
+            "Built a Telegram media streaming service with optimized HTTP range request handling",
             "Containerized applications with Docker and implemented CI/CD pipelines"
         ]
     },

@@ -68,7 +68,7 @@ export const About = () => {
                             Results-driven Full-Stack Developer with hands-on experience building scalable web applications using the MERN stack. Proven track record of deploying production-ready applications serving 1M+ file operations on AWS and GCP, with understanding in containerization (Docker/Kubernetes) and CI/CD pipelines.
                         </motion.p>
                         <motion.p variants={fadeInUp} className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
-                            Passionate about creating efficient, user-centric solutions with optimized performance and clean code architecture. My expertise extends to high-performance Telegram bot development, database optimization, and cloud infrastructure management.
+                            Passionate about creating efficient, user-centric solutions with optimized performance and clean code architecture. My expertise extends to real-time streaming solutions, database optimization, and cloud infrastructure management.
                         </motion.p>
 
                         <motion.div variants={fadeInUp} className="space-y-3 pt-2">
